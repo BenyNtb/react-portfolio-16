@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
 .navbar {
-    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,6 +64,10 @@
 .nav-links:hover {
     border-bottom: 4px solid #fff;
     transition: all 0.2s ease-out;
+}
+a:hover{
+    color:white;
+    text-decoration: none;
 }
 
 .fa-bars {

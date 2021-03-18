@@ -4,6 +4,7 @@ import AboutMe from './components/pages/AboutMe';
 import Skills from './components/pages/Skills';
 import Gallery from './components/pages/Gallery';
 import Contact from './components/pages/Contact';
+import About from './components/About'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <>
         <Router>
             <Navbar/>
+            <About/>
         <Switch>
             <Route path='/' exact />
             <Route path='/skills' component={Skills}/>
