@@ -1,8 +1,3 @@
-
-body
-    background: black
-
-// n is number of stars required
 @function multiple-box-shadow ($n) 
   $value: '#{random(2000)}px #{random(2000)}px #FFF'
   @for $i from 2 through $n
@@ -94,5 +89,15 @@ html
   to		
     transform: translateY(-2000px)
 
-  
+
+.emporium, .chef, .hoops
+    height: 300px
+    margin: 30px
+    display: table
+    justify-content: center
+    align-items: center 
+    padding: 5px
+
+.groupe
+    display: inline-flex      
 
