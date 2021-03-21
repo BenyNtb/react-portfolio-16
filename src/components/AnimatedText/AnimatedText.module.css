@@ -18,7 +18,7 @@
 }
 
 .animatedTextContentClone {
-    composes: animatedTextContent;
+    /* composes: animatedTextContent; */
     position: absolute;
     left: 0;
     top: 0;

@@ -83,6 +83,7 @@
     transform: translateY(-2000px);
   }
 } */
+/* ILLUSTRATION */
 .box {
   position: relative;
   width: 420px;
@@ -166,26 +167,34 @@
       opacity: 0;
   }
 }
-
+/* PROJET */
 body{
   background: black;
 }
-.emporium, .chef, .hoops{
+/* .emporium, .chef, .hoops, .photosen{
   height: 400px;
   margin: 30px;
   display: table;
   justify-content: center;
   align-items: center; 
   padding: 15px;
-}   
+}    */
 
-.groupe{
-  display: inline-flex;
+.groupe img{
+  height: 600px;
+  margin: 10px;
+  padding: 30px;
 }    
 
-.emporium {
-  border: 1px red solid ;    
+/* .emporium {
+
+    
 }
+.chef {
+  
+} */
+
+/* ILLUSTATRION */
 .chris, .teyana, .odell {
   height: 660px;
   align-items: center;
@@ -201,3 +210,4 @@ body{
   align-items: center;
   justify-content: center;
 }
+

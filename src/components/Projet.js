@@ -1,34 +1,45 @@
 import React, { Component } from 'react'
-import { Col, Image, Row } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
+// import { Linking, Text } from 'react-native-a';
 import './Projet.css';
 
 export class Projet extends Component {
     render() {
         return (
             <div>
-                {/* <div id='stars'></div>
-                <div id='stars2'></div>
-                <div id='stars3'></div> */}
                 <div className='projet-container'>
-                    <Row>
-                        <Col className='groupe'>
-                            <Image
-                            src='images/emporium.png'
-                            className='emporium'
-                            path='/gallery'
-                            />
-                            <Image 
-                            src='images/site-du-chef.png'
-                            className='chef'
-                            path='/gallery'
-                            />
+                    {/* <Row> */}
+                        <div className='groupe'>
+                            <div className='emporium'>    
+                                <Image
+                                src='images/emporium.png'
+                                path='/gallery'
+                                />
+                                {/* <Text style={{color: 'blue'}}
+                                onPress={() => Linking.openURL('http://google.com')}>
+                                Emporium
+                                </Text> */}
+                            </div>
+                            <div className='chef'>
+                                <Image 
+                                src='images/site-du-chef.png'
+                                path='/gallery'
+                                />
+                            </div>
+                            <div className='hoops'>
                             <Image
                             src='images/hoops-on-fire.png'
-                            className='hoops'
                             path='/gallery'
                             />
-                        </Col>
-                    </Row>
+                            </div>
+                            <div className='photosen'>
+                            <Image
+                            src='images/PhotoSen.png'
+                            path='/gallery'
+                            />
+                            </div>
+                        </div>
+                    {/* </Row> */}
                 </div>
             <div className='Row projet'>  
                 <div className='box'>

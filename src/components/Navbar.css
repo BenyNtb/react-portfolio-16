@@ -135,6 +135,7 @@ a:hover{
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
+        left: 280px;
     }
 
     .fa-times {
