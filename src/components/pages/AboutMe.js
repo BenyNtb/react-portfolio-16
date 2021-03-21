@@ -1,18 +1,17 @@
 import React from 'react'
-import Typical from 'react-typical'
-import '../About.sass';
+// import Typical from 'react-typical'
 import '../About.css'
 function AboutMe () {
     return (
         <>
         <div>
-            <div id='stars'></div>
+            {/* <div id='stars'></div>
                 <div id='stars2'></div>
-                <div id='stars3'></div>
-                    <div id='title'>
-                        {/* <span>
+                <div id='stars3'></div> */}
+                    {/* <div id='title'>
+                        <span>
                             Coming Soon ..
-                        </span> */}
+                        </span>
                         <Typical
                             steps={['Coming Soon ...', 500,]}
                             loop={Infinity}
@@ -30,7 +29,7 @@ function AboutMe () {
                     <rect class="shape" height="60" width="320" />
                     <div class="text">BENY NTB</div>
                 </svg>
-            </div>        
+            </div>         */}
         </div>
         </>    
     )

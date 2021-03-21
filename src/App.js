@@ -7,6 +7,7 @@ import Gallery from './components/pages/Gallery';
 import Contact from './components/pages/Contact';
 import About from './components/About'
 import './App.sass';
+import { AnimatedText } from './components/AnimatedText/AnimatedText';
 
 function App() {
     const [scrollbar, setScrollbar] = React.useState('0%')
@@ -23,14 +24,23 @@ function App() {
     })
     return (
         <Fragment>
+            
             <main>
                 <div id='progressbar' style={{height:scrollbar}}>
                 <div id='scrollPath'></div>
                 </div>
             </main>
+            <div className="App">
+                <AnimatedText
+                    textColor='#FFFFFF'
+                    overlayColor='#ff8585'
+                >
+                    {/* <h1>{props.titre}</h1> */}
+                </AnimatedText>    
+            </div>
         <Router>
             <Navbar/>
-            <About/>
+            <About titre='Beny'/>
         <Switch>
             <Route path='/' exact component={AboutMe}/>
             <Route path='/skills' component={Skills}/>

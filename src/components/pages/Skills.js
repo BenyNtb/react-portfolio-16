@@ -1,9 +1,12 @@
 import React from 'react'
-import Navbar from '../Navbar'
+import Competence from '../Competence'
+import '../Competence.css'
+
 
 function Skills () {
     return (
         <>
+            <Competence />
         </>    
     )
 }

@@ -1,39 +1,16 @@
 import React, { Component } from 'react'
-import { Col, Image, Row } from 'react-bootstrap';
-import './Projet.css';
+import { Image } from 'react-bootstrap';
+import './Competence.css'
 
-export class Projet extends Component {
-    render() {
+
+export class Competence extends Component {
+    render () {
         return (
             <div>
-                {/* <div id='stars'></div>
-                <div id='stars2'></div>
-                <div id='stars3'></div> */}
-                <div className='projet-container'>
-                    <Row>
-                        <Col className='groupe'>
-                            <Image
-                            src='images/emporium.png'
-                            className='emporium'
-                            path='/gallery'
-                            />
-                            <Image 
-                            src='images/site-du-chef.png'
-                            className='chef'
-                            path='/gallery'
-                            />
-                            <Image
-                            src='images/hoops-on-fire.png'
-                            className='hoops'
-                            path='/gallery'
-                            />
-                        </Col>
-                    </Row>
-                </div>
-            <div className='Row projet'>  
                 <div className='box'>
                     <div className="glass"></div>
                         <div className="content">
+                            <h1>Chris Brown</h1>
                             <Image 
                             src='images/Chris-Brown.jpg'
                             className='chris'
@@ -43,6 +20,7 @@ export class Projet extends Component {
                 <div className='box'>
                     <div className="glass"></div>
                         <div className="content">
+                            <h1>Teyana Taylor</h1>
                             <Image
                             src='images/Teyana-Taylor.jpg'
                             className='teyana'
@@ -52,16 +30,16 @@ export class Projet extends Component {
                 <div className='box'>
                     <div className="glass"></div>
                         <div className="content">
+                            <h1>Odell Beckham</h1>
                             <Image
                             src='images/Odell-Beckham.jpg'
                             className='odell'
                             />
                         </div>
                 </div>
-            </div>    
             </div>
         )
     }
 }
 
-export default Projet;
+export default Competence;
