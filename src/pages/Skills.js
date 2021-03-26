@@ -1,6 +1,6 @@
 import React from 'react'
-import Competence from '../Competence'
-import '../Competence.css'
+import Competence from '../components/Competence'
+import '../css/Competence.css'
 
 
 function Skills () {

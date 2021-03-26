@@ -52,7 +52,7 @@ menu, ol, ul {
 #skills-chart {
 	margin-top: 40px;
 }
-/* @media screen and (min-width:1024px) */
+@media screen and (min-width:1024px) {
 #skills-chart {
 	margin-top: 120px;
 	margin-bottom: 100px;
@@ -61,9 +61,11 @@ menu, ol, ul {
 	margin-right: auto;
 	position: relative;
 }
-/* @media screen and (min-width:1200px) */
+}
+@media screen and (min-width:1200px){
 #skills-chart {
 	margin-top: 180px;
+}
 }
 #main .section-inner {
 	width: 90%;
@@ -76,53 +78,58 @@ menu, ol, ul {
 	transition: width .5s;
 	padding-bottom: 60px;
 }
-/* @media screen and (min-width:768px) */
+@media screen and (min-width:768px){
 #main .section-inner {
 	width: 93%;
 }
-/* @media screen and (min-width:1024px) */
+}
+@media screen and (min-width:1024px){
 #main .section-inner {
 	padding-bottom: 110px;
 }
-/* @media screen and (min-width:1200px) */
+}
+@media screen and (min-width:1200px){
 #main .section-inner {
 	width: 1200px;
 }
-/* @media screen and (min-width:1024px) */
+}
+@media screen and (min-width:1024px){
 #main #about .section-inner {
 	padding-top: 50px;
 }
-#more-content section {
-	/* background: url('../img/section-bg.png') no-repeat 50% 0; */
 }
+/* #more-content section { */
+	/* background: url('../img/section-bg.png') no-repeat 50% 0; */
+/* } */
 #more-content section.first {
-	border-top: 1px solid #e4e4e4;
 	background-position: 50% -2px;
 }
 #more-content {
 	border-top: 1px solid #b3b4b4;
 	/* background: url('../img/circles-background.jpg') repeat-y 50% 0; */
 }
-/* @media screen and (min-width:1024px) */
+@media screen and (min-width:1024px){
 #more-content {
 	position: relative;
 	z-index: 10;
+}
 }
 #main {
 	position: relative;
 	padding-top: 15px;
 	overflow: hidden;
 }
-/* @media screen and (min-width:600px) */
+@media screen and (min-width:600px){
 #main {
 	padding-top: 25px;
+}
 }
 body {
 	margin: 0;
 }
 body, html {
 	font-family: "NillandRegular",serif;
-	color: #757575;
+	color: white;
 }
 html {
 	font-size: 100%;
@@ -139,18 +146,20 @@ h1, h2, h3, h4, h5, h6 {
 #skills-chart .chart-title {
 	margin: 0 0 160px 0;
 }
-/* @media screen and (min-width:1024px) */
+@media screen and (min-width:1024px){
 #skills-chart .chart-title {
 	margin: 0 0 -25px 0;
 }
+}
 #skills-chart ul {
 	position: relative;
 	list-style: none;
 }
-/* @media screen and (min-width:1024px) */
+@media screen and (min-width:1024px){
 #skills-chart ul {
 	position: relative;
 	list-style: none;
+}
 }
 #skills-chart #chart-legend {
 	position: absolute;
@@ -158,65 +167,73 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
 }
-/* @media screen and (min-width:1024px) */
+@media screen and (min-width:1024px){
 #skills-chart #chart-legend {
 	float: right;
 	width: 100%;
 	margin: 0;
 	padding: 0;
 }
+}
 #skills-chart #chart-data {
 	padding-top: 30px;
 	margin: 0;
-	background: url('/src/components/skills-chart-vbar-grid.svgz') no-repeat 0 100%;
+	background: url('/src/skills-chart-hbar.svgz') no-repeat 0 100%;
 }
-/* @media screen and (min-width:1024px) */
+@media screen and (min-width:1024px){
 #skills-chart #chart-data {
 	float: left;
 	padding-top: 0px;
 	margin: 0;
-	background: url('/src/components/skills-chart-vbar-grid.svgz') no-repeat 100% 100%;
+	background: url('/src/skills-chart-vbar-grid.svgz') no-repeat 100% 100%;
 	width: 80%;
+	z-index: 15;
+    margin: -1px;
+}
 }
 #skills-chart #chart-data li {
-	background: url('/src/components/skills-chart-vbar-grid.svgz') no-repeat 0 0;
+	background: url('/src/skills-chart-hbar-grid.svgz') no-repeat 0 0;
 	border-left: 1px solid #000;
 }
-/* @media screen and (min-width:1024px) */
+@media screen and (min-width:1024px){
 #skills-chart #chart-data li {
 	float: left;
-	background: url('/src/components/skills-chart-vbar-grid.svgz') no-repeat 0 100%;
+	background: url('/src/skills-chart-vbar-grid.svgz') no-repeat 0 100%;
 	border-left: 0 none;
 	border-bottom: 1px solid #000;
 	height: 220px;
 	position: relative;
 	margin-top: 54px;
+    z-index: -1;
+}
 }
 #skills-chart #chart-data .data-bar {
-	background: url('/src/components/skills-chart-vbar-grid.svgz') no-repeat 100% 50%;
+	background: url('/src/skills-chart-hbar.svgz') no-repeat 100% 50%;
 	height: 60px;
 }
-/* @media screen and (min-width:1024px) */
+@media screen and (min-width:1024px){
 #skills-chart #chart-data .data-bar {
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
-	background: url('/src/components/skills-chart-vbar-grid.svgz') no-repeat 50% 0;
+	background: url('/src/skills-chart-vbar.svgz') no-repeat 50% 0;
+}
 }
 #skills-chart #chart-data #bar08 .data-bar {
 	width: 53%;
 }
-/* @media screen and (min-width:1024px) */
+@media screen and (min-width:1024px){
 #skills-chart #chart-data #bar08 .data-bar {
 	width: 100%;
 	height: 53%;
+}
 }
 #skills-chart #chart-data .data-label {
 	line-height: 60px;
 	font-size: 0.93em;
 	margin-left: 15px;
 }
-/* @media screen and (min-width:1024px) */
+@media screen and (min-width:1024px){
 #skills-chart #chart-data .data-label {
 	position: absolute;
 	bottom: -25px;
@@ -236,69 +253,78 @@ h1, h2, h3, h4, h5, h6 {
 	transform-origin: 0 0;
 	width: 300px;
 }
+}
 #skills-chart #chart-data #bar06 .data-bar {
 	width: 100%;
 }
-/* @media screen and (min-width:1024px) */
+@media screen and (min-width:1024px){
 #skills-chart #chart-data #bar06 .data-bar {
 	width: 100%;
 	height: 100%;
 }
+}
 #skills-chart #chart-data #bar05 .data-bar {
 	width: 65%;
 }
-/* @media screen and (min-width:1024px) */
+@media screen and (min-width:1024px){
 #skills-chart #chart-data #bar05 .data-bar {
 	width: 100%;
 	height: 65%;
 }
+}
 #skills-chart #chart-data #bar04 .data-bar {
 	width: 78%;
 }
-/* @media screen and (min-width:1024px) */
+@media screen and (min-width:1024px){
 #skills-chart #chart-data #bar04 .data-bar {
 	width: 100%;
 	height: 78%;
 }
+}
 #skills-chart #chart-data #bar07 .data-bar {
 	width: 75%;
 }
-/* @media screen and (min-width:1024px) */
+@media screen and (min-width:1024px){
 #skills-chart #chart-data #bar07 .data-bar {
 	width: 100%;
 	height: 75%;
 }
+}
 #skills-chart #chart-data #bar09 .data-bar {
 	width: 85%;
 }
-/* @media screen and (min-width:1024px) */
+@media screen and (min-width:1024px){
 #skills-chart #chart-data #bar09 .data-bar {
 	width: 100%;
 	height: 85%;
+}
 }
 #skills-chart #chart-data #bar03 .data-bar {
 	width: 85%;
 }
-/* @media screen and (min-width:1024px) */
+@media screen and (min-width:1024px){
 #skills-chart #chart-data #bar03 .data-bar {
 	width: 100%;
 	height: 85%;
 }
+}
 #skills-chart #chart-data #bar02 .data-bar {
 	width: 85%;
 }
-/* @media screen and (min-width:1024px) */
+@media screen and (min-width:1024px){
 #skills-chart #chart-data #bar02 .data-bar {
 	width: 100%;
 	height: 85%;
 }
+}
 #skills-chart #chart-data #bar01 .data-bar {
 	width: 85%;
 }
-/* @media screen and (min-width:1024px) */
+@media screen and (min-width:1024px){
 #skills-chart #chart-data #bar01 .data-bar {
 	width: 100%;
 	height: 85%;
+}
 }
 #skills-chart #chart-legend li {
 	position: relative;
@@ -306,7 +332,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 20%;
 	/* background: url('../img/skills-chart-legend-vline.svgz') no-repeat 100% 0; */
 }
-/* @media screen and (min-width:1024px) */
+@media screen and (min-width:1024px){
 #skills-chart #chart-legend li {
 	position: absolute;
 	left: 0px;
@@ -315,25 +341,31 @@ h1, h2, h3, h4, h5, h6 {
 	border-bottom: 1px solid #aaa;
 	width: 100%;
 }
-/* @media screen and (min-width:1024px) */
+}
+@media screen and (min-width:1024px) {
 #skills-chart #chart-legend li#label01 {
 	top: 220px;
 }
-/* @media screen and (min-width:1024px) */
+}
+@media screen and (min-width:1024px) {
 #skills-chart #chart-legend li#label02 {
 	top: 165px;
 }
-/* @media screen and (min-width:1024px) */
+}
+@media screen and (min-width:1024px){
 #skills-chart #chart-legend li#label03 {
 	top: 110px;
 }
-/* @media screen and (min-width:1024px) */
+}
+@media screen and (min-width:1024px){
 #skills-chart #chart-legend li#label04 {
 	top: 55px;
 }
-/* @media screen and (min-width:1024px) */
+}
+@media screen and (min-width:1024px) {
 #skills-chart #chart-legend li#label05 {
 	top: 0px;
+}
 }
 #skills-chart #chart-legend .legend-label {
 	position: absolute;
@@ -355,11 +387,12 @@ h1, h2, h3, h4, h5, h6 {
 	width: 200px;
 	text-align: right;
 }
-/* @media screen and (min-width:600px) */
+@media screen and (min-width:600px){
 #skills-chart #chart-legend .legend-label {
 	font-size: 0.9em;
 }
-/* @media screen and (min-width:1024px) */
+}
+@media screen and (min-width:1024px){
 #skills-chart #chart-legend .legend-label {
 	position: static;
 	float: right;
@@ -385,6 +418,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 16px;
 	text-align: left;
 }
+}
 #skills-chart #chart-legend li#label05 .legend-label {
 	/* background: url('../img/darth-vader.svgz') no-repeat 100% 50%; */
 	padding: 0 40px 0 0;
@@ -393,7 +427,7 @@ h1, h2, h3, h4, h5, h6 {
 	-o-background-size: contain;
 	background-size: contain;
 }
-/* @media screen and (min-width:1024px) */
+@media screen and (min-width:1024px){
 #skills-chart #chart-legend li#label05 .legend-label {
 	/* background: url('../img/darth-vader.svgz') no-repeat 120px 5px; */
 	padding: 4px 0 0 0;
@@ -402,24 +436,38 @@ h1, h2, h3, h4, h5, h6 {
 	-o-background-size: 35px;
 	background-size: 35px;
 }
-/* @media screen and (min-width:1024px) */
+}
+@media screen and (min-width:1024px){
 #skills-chart #chart-legend li#label04 .legend-label {
 	border-right-color: #8ebd7b;
 }
-/* @media screen and (min-width:1024px) */
+}
+@media screen and (min-width:1024px){
 #skills-chart #chart-legend li#label03 .legend-label {
 	border-right-color: #beca7d;
 }
-/* @media screen and (min-width:1024px) */
+}
+@media screen and (min-width:1024px){
 #skills-chart #chart-legend li#label02 .legend-label {
 	border-right-color: #f4b800;
 }
-/* @media screen and (min-width:1024px) */
+}
+@media screen and (min-width:1024px){
 #skills-chart #chart-legend li#label01 .legend-label {
 	border-right-color: #f44b00;
+}
 }
 #skills-chart .chart-title span {
 	font-size: 1.5em;
 	background: rgba(219,39,0,0.45);
 	color: #fff;
+}
+
+
+.skills {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
+	
 }

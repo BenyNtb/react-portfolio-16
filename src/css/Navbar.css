@@ -62,7 +62,7 @@
 }
 
 .nav-links:hover {
-    border-bottom: 4px solid #fff;
+    border-bottom: 4px solid rgb(246, 160, 246);
     transition: all 0.2s ease-out;
 }
 a:hover{
@@ -105,6 +105,10 @@ a:hover{
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 1;
+        font-size: 50px;
+        height: 5620px;
+        width: 370px;
+        border-bottom: 1px solid white;
     }
 
     .nav-links {
@@ -130,12 +134,12 @@ a:hover{
     .menu-icon {
         display: block;
         position: absolute;
-        top: 0;
+        top: 0px;
         right: 0;
         transform: translate(-100%, 60%);
-        font-size: 1.8rem;
+        font-size: 3.8rem;
         cursor: pointer;
-        left: 280px;
+        left: 270px;
     }
 
     .fa-times {

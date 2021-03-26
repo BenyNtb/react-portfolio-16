@@ -157,15 +157,25 @@
 }
 
 @keyframes anim {
-
+  
   0%,
   100% {
-      opacity: 1;
+    opacity: 1;
   }
-
+  
   50% {
-      opacity: 0;
+    opacity: 0;
   }
+}
+/* ILLUSTATRION */
+.chris, .teyana, .odell {
+  height: 660px;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  padding: 40px;
+  width: 482px;
+  margin: 15px;
 }
 /* PROJET */
 body{
@@ -181,11 +191,14 @@ body{
 }    */
 
 .groupe img{
-  height: 600px;
-  margin: 10px;
-  padding: 30px;
+  margin: 25px;
+  
+  width: 100%;
 }    
-
+.groupe {
+  display: flex;
+  flex-wrap: wrap;
+}
 /* .emporium {
 
     
@@ -194,20 +207,91 @@ body{
   
 } */
 
-/* ILLUSTATRION */
-.chris, .teyana, .odell {
-  height: 660px;
-  align-items: center;
-  display: inline-flex;
-  justify-content: center;
-  padding: 40px;
-  width: 482px;
-  margin: 15px;
-}
 
 .projet {
-  display: flex;
   align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.pictures {
+  width: 800px;
+  opacity: 1;
+  margin: 30px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.pictures:hover{
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+.overlay {
+  align-items: center;
+  display: flex;
   justify-content: center;
 }
 
+.quote h3{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+  font-size: 50px;
+  padding: 150px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px;
+}
+
+.titre1 {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  margin: 20px;
+}
+
+@media screen and (max-width: 960px) {
+  .projet {
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+  }
+  .quote h3{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .groupe img {
+    width: 300px;
+  }
+  .hoops-text{
+    margin-left: -475px;
+    font-size: 12px;
+  }
+  .box, .content{
+    margin: 12px;
+  }
+  .pictures{
+    display: flex;
+    padding-left: -290px;
+    justify-content: center;
+    align-items: center;
+    margin-left: -150px;
+  }
+}

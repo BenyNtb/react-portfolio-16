@@ -1,7 +1,7 @@
 import React from 'react';
 // import Footer from './Footer'
 
-import './About.css'
+import '../css/About.css'
 import Typical from 'react-typical';
 
 function About() {
@@ -21,8 +21,8 @@ function About() {
                         I'm a {''}
                     <Typical
                         steps={[
-                        'developer💻', 1000,
-                        'digital illustrator💅🏾', 1000,
+                        'full stack developer💻', 1000,
+                        'digital illustrator🎨', 1000,
                     ]}
                         loop={Infinity}
                         wrapper="b"
