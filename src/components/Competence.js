@@ -10,9 +10,14 @@ const Competence = () => {
     }, []);
         return (
             <div>
+                <div>
+                Hey, I’m Beny.
+                A full stack developer from Brussels. I create bespoke websites to help people go further online.
+                </div>
                 <div className='skills'>
                     <Image
-                    src='images/skills.jpg'
+                    src='images/image0.jpg'
+                    style={{height: '600px', marginLeft: '40%', marginTop:'15%'}}
                     path='/skills'> 
                     </Image>
                 </div>

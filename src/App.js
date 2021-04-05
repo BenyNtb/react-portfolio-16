@@ -1,8 +1,8 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Navbar from './components/Navbar';
-import AboutMe from './pages/AboutMe';
-import Skills from './pages/Skills';
+import AboutMe from './pages/Home';
+import Skills from './pages/AboutMe';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 // import About from './components/About'

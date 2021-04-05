@@ -104,10 +104,6 @@ menu, ol, ul {
 #more-content section.first {
 	background-position: 50% -2px;
 }
-#more-content {
-	border-top: 1px solid #b3b4b4;
-	/* background: url('../img/circles-background.jpg') repeat-y 50% 0; */
-}
 @media screen and (min-width:1024px){
 #more-content {
 	position: relative;
@@ -471,3 +467,4 @@ h1, h2, h3, h4, h5, h6 {
 	height: 500px;
 	
 }
+

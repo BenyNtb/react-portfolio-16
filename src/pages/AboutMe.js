@@ -1,15 +1,14 @@
 import React from 'react'
-// import Typical from 'react-typical'
-// import '../About.css'
-import About from '../components/About'
-function AboutMe () {
+import Competence from '../components/Competence'
+import '../css/Competence.css'
+
+
+function Skills () {
     return (
         <>
-        <div>
-            <About />
-        </div>
+            <Competence />
         </>    
     )
 }
 
-export default AboutMe;
+export default Skills;
