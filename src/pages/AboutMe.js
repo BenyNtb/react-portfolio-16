@@ -1,5 +1,5 @@
 import React from 'react'
-import Competence from '../components/Competence'
+import Competence from '../components/About'
 import '../css/Competence.css'
 
 

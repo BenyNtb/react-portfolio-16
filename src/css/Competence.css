@@ -464,7 +464,86 @@ h1, h2, h3, h4, h5, h6 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 500px;
-	
+	border-radius: 50%;
+}
+.presentation {
+	font-size: 40px;
+}
+.moi {
+	border-radius: 50%;
 }
 
+.project__tools {
+	clear: both;
+	margin-bottom: 20px;
+	margin-top: -770px;
+    margin-left: 35vh;
+}
+.project__info {
+	padding: 0 30px;
+	overflow: hidden;
+}
+@media all and (min-width:75em) {
+	.project__info {
+		float: left;
+		width: 40%;
+		margin-top: 40px;
+	}
+}
+.project {
+	overflow: hidden;
+}
+:nth-child(2n+1).project {
+	background-color: #ececec;
+}
+body {
+	font-size: 16px;
+	margin: 0 auto;
+	background-color: #fff;
+	color: #333;
+	font-family: "Roboto", helvetica, arial, sans-serif;
+	overflow-x: hidden;
+}
+@media all and (min-width:48em) {
+	body {
+	margin: 113px auto 0;
+}
+}
+
+.project__tool {
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+	list-style: none;
+	width: 50px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+a, u, ins {
+	text-decoration: none;
+}
+a {
+	color: #2680c2;
+	text-decoration: none;
+	outline: 0;
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+}
+.project__info a {
+	color: inherit;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+.project__tool svg {
+	width: 100%;
+	
+}
+/* .react {
+	height: 250px;
+} */

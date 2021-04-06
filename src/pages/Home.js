@@ -1,7 +1,7 @@
 import React from 'react'
 // import Typical from 'react-typical'
 // import '../About.css'
-import About from '../components/About'
+import About from '../components/Home'
 function Home () {
     return (
         <>
