@@ -1,15 +1,15 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Navbar from './components/Navbar';
 import AboutMe from './pages/Home';
 import Skills from './pages/AboutMe';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
-// import About from './components/About'
+import { withTranslation } from "react-i18next";
+import ChangeLanguage from './components/change-language.js'
 import './App.sass';
 
 
-export default function App() {
+function App() {
     const [scrollbar, setScrollbar] = React.useState('0%')
 
     React.useEffect(() => {
@@ -31,15 +31,15 @@ export default function App() {
                 </div>
             </main>
             <div className="App">
-                {/* <AnimatedText
-                    textColor='#FFFFFF'
-                    overlayColor='#ff8585'
-                >
-                    <h1>{props.titre}</h1>
-                </AnimatedText>     */}
+                <h2>
+                    <withTranslation i18nKey="welcomeMsg" />
+                </h2>
+                <withTranslation i18nKey='nested.startMsg'/>
+                <br/>
+                <ChangeLanguage/>
             </div>
         <Router>
-            <Navbar/>
+            {/* <Navbar/> */}
             {/* <About titre='Beny'/> */}
         <Switch>
             <Route path='/' exact component={AboutMe}/>
@@ -48,7 +48,10 @@ export default function App() {
             <Route path='/contact' component={Contact}/>
         </Switch>    
         </Router>
+        
         </>
     )
 }
+
+export default withTranslation("translations")(App);
 

@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Button, Image } from 'react-bootstrap';
 // import { Linking, Text } from 'react-native-a';
-import Flip from 'react-reveal/Flip';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import '../css/Projet.css'
@@ -10,34 +9,63 @@ const Projet = () => {
     useEffect(() => {
         Aos.init({duration: 2000});
     }, []);
+    const [isHovered, setHover] = useState (false);
         return (
             <div>
-                <div className="titre1"> My project</div>
+                <div data-aos="fade-zoom-in" className="titre1"> My project</div>
                 <div className='projet'>
                     {/* <Row> */}
                         <div className='groupe'>
-                            <div>
-                                <div data-aos="fade-right" data-aos-offset='300' data-aos-easing='ease-in-sine' className='pictures'>    
+                            
+                                <div data-aos="fade-right" data-aos-offset='300' data-aos-easing='ease-in-sine' className='imageContainer'
+                            onMouseOver={() => setHover(true)}
+                            onMouseLeave={() => setHover(false)} className='pictures'>    
                                     <Image
                                     src='images/emporium.png'
                                     path='/gallery'
                                     />
-                                </div>
+                                    {isHovered && (
+                                        <Button
+                                        size='sm'
+                                        style={{
+                                            position:'absolute',
+                                            top: '15vh',
+                                            right: '30vh',
+                                        }}
+                                        className='overlay'> 
+                                        Emporium
+                                        </Button>
+                                    )
+                                    }
+                                
                                     {/* <a className="link" target="_blank" href=" https://benyntb.github.io/cs_emporium_js_16/">See Project</a> */}
-                                <Button className='overlay'> Emporium</Button>
                             </div>
-                            <div>
-                                <div data-aos="fade-left" data-aos-offset='300' data-aos-easing='ease-in-sine' className='pictures'>
+                            
+                                <div data-aos="fade-left" data-aos-offset='300' data-aos-easing='ease-in-sine' className='imageContainer'
+                            onMouseOver={() => setHover(true)}
+                            onMouseLeave={() => setHover(false)} className='pictures'>
                                     <Image 
                                     src='images/site-du-chef.png'
                                     path='/gallery'
                                     />
-                                </div>
+                                    {isHovered && (
+                                    <Button
+                                    size='sm'
+                                        style={{
+                                            position:'absolute',
+                                            top: '15vh',
+                                            right: '30vh',
+                                        }}
+                                    className='overlay'> Taste
+                                    </Button>
+                                    )
+                                    }
+                                    </div>
                                     {/* <a className="link" target="_blank" href="https://benyntb.github.io/coding_16_site_chef/">See Project</a> */}
-                                <Button className='overlay'> Taste</Button>
-                            </div>
+                            
                             <div>
-                                <div data-aos='fade-right' data-aos-offset='300' data-aos-easing='ease-in-sine' className='pictures'>
+
+                                <div data-aos='fade-right' data-aos-offset='300' data-aos-easing='ease-in-sine'  className='pictures'>
                                         <Image
                                         src='images/hoops-on-fire.png'
                                         path='/gallery'
@@ -45,14 +73,29 @@ const Projet = () => {
                                 </div>
                                 <p className='hoops-text overlay'>Hoops on fire is currently down maintenance. Come back later !</p>
                             </div>
+
                             <div>
-                                <div data-aos='fade-left' data-aos-offset='300' data-aos-easing='ease-in-sine' className='pictures'>
+                                <div data-aos='fade-left' data-aos-offset='300' data-aos-easing='ease-in-sine' className='imageContainer'
+                            onMouseOver={() => setHover(true)}
+                            onMouseLeave={() => setHover(false)} className='pictures'>
                                         <Image
                                         src='images/PhotoSen.png'
                                         path='/gallery'
                                         />
+                                        {isHovered && (
+                                        <Button
+                                        size='sm'
+                                        style={{
+                                            position:'absolute',
+                                            top: '15vh',
+                                            right: '30vh',
+                                        }}
+                                        className='overlay'>
+                                            Photosen
+                                            </Button>
+                                            )
+                                        }
                                 </div>
-                                <Button className='overlay'>Photosen</Button>
                             </div>
                         </div>
                     {/* </Row> */}

@@ -1,9 +1,11 @@
 import React from 'react'
+import Navbar from '../components/Navbar';
 import '../css/Client.css'
 
 function Contact () {
     return (
         <div>
+            <Navbar/>
             <div id="loading-page" style={{opacity: 0, visibility: 'hidden', zIndex: -1}}>
                 <div id="loading-page-logo" style={{opacity:0}}>
                 </div>
@@ -27,14 +29,14 @@ function Contact () {
                 </div>
             </div>                                
             <div class="wpb_wrapper">
-                <h1 style={{overflow: 'hidden'}} class="vc_custom_heading text__mask mb-xl-3 mb-lg-4 mb-0 pb-xl-1 pb-lg-1 pb-1 animated">
-            <div class="text__mask-wrap" style={{transform: 'matrix(1, 0, 0, 1, 0, 0)'}}>Let’s collaborate</div>
+                <h1 data-aos='zoom-in'style={{overflow: 'hidden'}} class="vc_custom_heading text__mask mb-xl-3 mb-lg-4 mb-0 pb-xl-1 pb-lg-1 pb-1 animated">
+            <div  class="text__mask-wrap" style={{transform: 'matrix(1, 0, 0, 1, 0, 0)'}}>Let’s collaborate</div>
                 </h1>
         <div class="wpb_text_column wpb_content_element text__mask animated" data-screen_offset=".1"
             style={{overflow: 'hidden'}}>
             <div class="text__mask-wrap" style={{transform: 'matrix(1, 0, 0, 1, 0, 0)'}}>
-                <div class="wpb_wrapper">
-                    <p><a href="mailto:b.ntambwe97@gmail.com" style={{marginLeft:'5%'}}>b.ntambwe97@gmail.com</a></p>
+                <div data-aos='zoom-in' class="wpb_wrapper">
+                    <p><a href="mailto:b.ntambwe97@gmail.com" style={{marginLeft:'10%'}}>b.ntambwe97@gmail.com</a></p>
 
                 </div>
             </div>
@@ -60,7 +62,7 @@ function Contact () {
 {/* fin */}
         <div class="col-xl-4 col-lg-4 col-md-5 col-10 offset-xl-1 offset-lg-1 offset-0 right-from-content wpb_column vc_column_container vc_col-sm-6">
             <div class="vc_column-inner ">
-                <div class="wpb_wrapper">
+                <div data-aos="flip-left" class="wpb_wrapper">
                     <h4 style={{overflow: 'hidden'}} class="vc_custom_heading mt-xl-2 mt-lg-3 mt-2 pt-xl-1 pt-lg-0 pt-1 mb-xl-2 mb-lg-2 pb-xl-1 pb-lg-1 pb-0 mb-2 text__mask animated" data-screen_offset=".1">
                         <div class="text__mask-wrap" style={{transform: 'matrix(1, 0, 0, 1, 0, 0)'}}>Send your inquiry</div>
                         </h4>
