@@ -4,8 +4,6 @@ import AboutMe from './pages/Home';
 import Skills from './pages/AboutMe';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
-import { withTranslation } from "react-i18next";
-import ChangeLanguage from './components/change-language.js'
 import './App.sass';
 
 
@@ -30,14 +28,14 @@ function App() {
                 <div id='scrollPath'></div>
                 </div>
             </main>
-            <div className="App">
+            {/* <div className="App">
                 <h2>
                     <withTranslation i18nKey="welcomeMsg" />
                 </h2>
                 <withTranslation i18nKey='nested.startMsg'/>
                 <br/>
                 <ChangeLanguage/>
-            </div>
+            </div> */}
         <Router>
             {/* <Navbar/> */}
             {/* <About titre='Beny'/> */}
@@ -53,5 +51,5 @@ function App() {
     )
 }
 
-export default withTranslation("translations")(App);
+export default (App);
 

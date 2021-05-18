@@ -7,7 +7,7 @@ body {
 	height: 100%;
 }
 html, button, input, select, textarea {
-	color: #222;
+	color: #fff;
 }
 h3 {
 	font-size: 1.17em;
@@ -476,8 +476,8 @@ h1, h2, h3, h4, h5, h6 {
 .project__tools {
 	clear: both;
 	margin-bottom: 20px;
-	margin-top: -770px;
-    margin-left: 35vh;
+	margin-top: -820px;
+    margin-left: 50vh;
 }
 .project__info {
 	padding: 0 30px;
@@ -544,6 +544,3 @@ svg:not(:root) {
 	width: 100%;
 	
 }
-/* .react {
-	height: 250px;
-} */

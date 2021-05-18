@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
 import '../css/Client.css'
+import { init } from 'emailjs-com';
 
 function Contact () {
     return (
@@ -41,9 +42,9 @@ function Contact () {
                 </div>
             </div>
         </div>
-        <div class="contact__info">
+        <div data-aos="zoom-in" class="contact__info">
             <div class="row">
-                <div class="contact__info-social col-xl-6 col-5 text__fade-horizontal animated" data-screen_offset=".2">
+                <div class="contact__info-social col-xl-6 col-5 text__fade-horizontal animated" data-screen_offset=".2" style={{bottom: "20vh"}}>
                     <div class="text__fade-horizontal-wrap" style={{opacity: 1, marginLeft:'10%', marginBottom: '5%', transform: 'matrix(1, 0, 0, 1, 0, 0)'}}>
                         <h4 class="contact__info-title">Find me</h4>
                         <ul class="contact__info-list-social row justify-content-start mb-0 pl-0">
@@ -51,7 +52,7 @@ function Contact () {
                                 <a target="_blank" href="https://github.com/BenyNtb"><i class="fab fa-github"></i></a>
                             </li>
                             <li class="social__item col-auto">
-                                <a target="_blank" href="https://be.linkedin.com/in/benedicte-m-n-ba841320a"><i class="fab fa-linkedin-in"></i></a>
+                                <a target="_blank" href="https://be.linkedin.com/in/benedicte-modi-ntambwe"><i class="fab fa-linkedin-in"></i></a>
                             </li>
                         </ul>
                     </div>

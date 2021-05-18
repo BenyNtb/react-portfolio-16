@@ -17,52 +17,33 @@ const Projet = () => {
                     {/* <Row> */}
                         <div className='groupe'>
                             
-                                <div data-aos="fade-right" data-aos-offset='300' data-aos-easing='ease-in-sine' className='imageContainer'
-                            onMouseOver={() => setHover(true)}
-                            onMouseLeave={() => setHover(false)} className='pictures'>    
+                                <div data-aos="fade-right" data-aos-offset='300' data-aos-easing='ease-in-sine' className='imageContainer' className='pictures'>    
                                     <Image
                                     src='images/emporium.png'
                                     path='/gallery'
-                                    />
-                                    {isHovered && (
-                                        <Button
-                                        size='sm'
-                                        style={{
-                                            position:'absolute',
-                                            top: '15vh',
-                                            right: '30vh',
-                                        }}
-                                        className='overlay'> 
-                                        Emporium
-                                        </Button>
-                                    )
-                                    }
-                                
-                                    {/* <a className="link" target="_blank" href=" https://benyntb.github.io/cs_emporium_js_16/">See Project</a> */}
+                                    className='overlay1'/>
+                                    <div data-aos="fade-zoom-in"
+                                    data-aos-easing="ease-in-back"
+                                    data-aos-delay="1000"
+                                    data-aos-offset="0">
+                                        <a className="link" target="_blank" href=" https://benyntb.github.io/cs_emporium_js_16/">See Project</a>
+                                    </div>
+                                    
                             </div>
                             
-                                <div data-aos="fade-left" data-aos-offset='300' data-aos-easing='ease-in-sine' className='imageContainer'
-                            onMouseOver={() => setHover(true)}
-                            onMouseLeave={() => setHover(false)} className='pictures'>
+                                <div data-aos="fade-left" data-aos-offset='300' data-aos-easing='ease-in-sine' className='imageContainer'className='pictures'>
                                     <Image 
                                     src='images/site-du-chef.png'
                                     path='/gallery'
                                     />
-                                    {isHovered && (
-                                    <Button
-                                    size='sm'
-                                        style={{
-                                            position:'absolute',
-                                            top: '15vh',
-                                            right: '30vh',
-                                        }}
-                                    className='overlay'> Taste
-                                    </Button>
-                                    )
-                                    }
+                                    <div data-aos="fade-zoom-in"
+                                    data-aos-easing="ease-in-back"
+                                    data-aos-delay="1000"
+                                    data-aos-offset="0">
+                                        <a className="link" target="_blank" href="https://benyntb.github.io/coding_16_site_chef/">See Project</a>
                                     </div>
-                                    {/* <a className="link" target="_blank" href="https://benyntb.github.io/coding_16_site_chef/">See Project</a> */}
-                            
+                                    
+                                    </div>
                             <div>
 
                                 <div data-aos='fade-right' data-aos-offset='300' data-aos-easing='ease-in-sine'  className='pictures'>
@@ -70,31 +51,26 @@ const Projet = () => {
                                         src='images/hoops-on-fire.png'
                                         path='/gallery'
                                         />
+                                        <div data-aos="fade-zoom-in"
+                                        data-aos-easing="ease-in-back"
+                                        data-aos-delay="1000"
+                                        data-aos-offset="0">
+                                            <p className='link'>Hoops on fire is currently down maintenance. Come back later !</p>
+                                        </div>
                                 </div>
-                                <p className='hoops-text overlay'>Hoops on fire is currently down maintenance. Come back later !</p>
                             </div>
 
                             <div>
-                                <div data-aos='fade-left' data-aos-offset='300' data-aos-easing='ease-in-sine' className='imageContainer'
-                            onMouseOver={() => setHover(true)}
-                            onMouseLeave={() => setHover(false)} className='pictures'>
+                                <div data-aos='fade-left' data-aos-offset='300' data-aos-easing='ease-in-sine' className='imageContainer' className='pictures'>
                                         <Image
                                         src='images/PhotoSen.png'
-                                        path='/gallery'
-                                        />
-                                        {isHovered && (
-                                        <Button
-                                        size='sm'
-                                        style={{
-                                            position:'absolute',
-                                            top: '15vh',
-                                            right: '30vh',
-                                        }}
-                                        className='overlay'>
-                                            Photosen
-                                            </Button>
-                                            )
-                                        }
+                                        path='/gallery'className='overlay4'/>
+                                        <div data-aos="fade-zoom-in"
+                                        data-aos-easing="ease-in-back"
+                                        data-aos-delay="1000"
+                                        data-aos-offset="0">
+                                            <a className="link" target="_blank" href="https://benyntb.github.io/Photosen/">See Project</a>
+                                        </div> 
                                 </div>
                             </div>
                         </div>

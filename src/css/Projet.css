@@ -198,6 +198,7 @@ body{
 .groupe {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 10vh;
 }
 /* .emporium {
 
@@ -222,16 +223,28 @@ body{
   transition: .3s ease-in-out;
 }
 
-.pictures:hover{
+/* .pictures:hover{
   -webkit-filter: blur(5px);
   filter: blur(5px);
+} */
+.link {
+  display: flex;
+  justify-content: center;
 }
-.overlay {
+.overlay1 {
   align-items: center;
   display: flex;
   justify-content: center;
   z-index: 1;
+
 }
+/* .overlay4 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  
+} */
 
 .quote h3{
   display: flex;
